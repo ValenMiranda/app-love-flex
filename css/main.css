@@ -1,7 +1,121 @@
 body {
-  margin: 0 auto;
-  font-size: 16px;
-  line-height: 1.71429;
-  background-color: #fff;
-  /* Enlaza la tipografia Open Sans */
+	margin: 0 auto;
+	font-size: 16px;
+	line-height: 1.71429;
+	background-color: #fff;
+	/* Enlaza la tipografia Open Sans */
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Menu */
+.menu{
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+a{
+	color: #373B47;
+	text-decoration: none;
+}
+
+a:hover {
+  color: #E95853;
+}
+
+.link{
+  font-weight: 700;
+  padding: 21px;
+  display: inline-block;
+}
+
+.menu.flex-container{
+	/* Con esto se logra que nuestros elementos
+	interno sean alineados a la izquierda*/
+	justify-content: flex-start;
+}
+
+.logo-container{
+	/* Para que nuestro logo se coloque hacia la derecha,
+	solo debemos definir con margin-left:auto*/
+	margin-left: auto;
+	margin-right: 20px;
+}
+
+.flex-container .logo{
+	width: 70px;
+	height: 70px;
+}
+
+/* Home */
+#home{
+	height: 600px;
+	margin-top: 70px;
+
+	background-image: url('../assets/images/bg-home.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+/* Le definimos el valor column a la propiedad flex-direction
+para que se despliegue en forma vertical.
+Como necesitamos que todos los elementos estén centrados
+horizontal y verticalmente, usamos el valor center.*/
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	color: whitesmoke;
+}
+
+.text-home{
+	font-size: 2.4em;
+}
+
+.btn-home{
+	text-decoration: none;
+	background: #2Ecc71;
+	color: #fff;
+	padding: 11px 20px;
+	border-radius: 1px;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-top: 63;
+	display: inline-block;
+	font-size: 14px;
+}
+
+/* Services */
+#services{
+	background-color: #F17C72;
+	text-align: center;
+	color: #fff;
+	padding: 70px;
+}
+
+#services.flex-container{
+	/*Con este valor podemos ver como los elementos internos
+	se distribuyen dentro de la pantalla dejando un espacio a cada lado*/
+	justify-content: space-around;
+
+	/* Defnimos este valor para que los elementos no se vean forzados a
+	desplegarse en una sola linea*/
+	flex-wrap: wrap;
+}
+
+.box-services{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+footer{
+  text-align: center;
+  height: 70px;
+  background-color: #373b47;
+  color: white;
+  padding-top: 7px;
+  
 }
